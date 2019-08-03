@@ -28,21 +28,25 @@ $('body').append($('<main>'));
 $('main').append($('<section>'));
 $('section').append($('<div>', {class:  'container welcome'}));
 
+/* Header of the title */
+
 $('.welcome').append($('<header class = "jumbotron my-4 button-action"></header>'));
 $('.jumbotron').append($('<h1 class="display-3">A Warm Welcome!</h1>'));
 $('.my-4').append($('<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>'));
 $('.button-action').append($('<a href="#" class="btn btn-primary btn-lg">Call to action!</a>'));
 
+/* Image cards */
+
 $('.welcome').append($('<div>', {class:  'row text-center', id: 'img1'}));
 
-$('#img1').append($('<div>', {class:  'col-lg-3 col-md-6 mb-4'}));
-$('.col-lg-3').append($('<div>', {class:  'card h-100 card-1'}));
-$('.card-1').append($('<img>', {class:  'card-img-top', src: 'https://cdn.pixabay.com/photo/2019/07/03/16/38/light-bulb-4314993_1280.jpg'}));
-$('.card').append($('<div>', {class:  'card-body'}));
-$('.card-body').append($('<h4 class="card-title">Card title</h4>'));
-$('.card-body').append($('<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>'));
-$('.col-lg-3').append($('<div>', {class:  'card-footer'}));
-$('.card-footer').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
+$('#img1').append($('<div>', {class:  'col-lg-3 col-md-6 mb-4', id: 'card01'}));
+$('#card01').append($('<div>', {class:  'card h-100', id: 'card-21'}));
+$('#card-21').append($('<img>', {class:  'card-img-top', src: 'https://cdn.pixabay.com/photo/2019/07/03/16/38/light-bulb-4314993_1280.jpg'}));
+$('#card-21').append($('<div>', {class:  'card-body', id: 'title11'}));
+$('#title11').append($('<h4 class="card-title">Card title</h4>'));
+$('#title11').append($('<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>'));
+$('#card-21').append($('<div>', {class:  'card-footer button-1'}));
+$('.button-1').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
 
 
 $('#img1').append($('<div>', {class:  'col-lg-3 col-md-6 mb-4', id: 'card'}));
@@ -51,8 +55,8 @@ $('#card-1').append($('<img>', {class:  'card-img-top', src: 'https://cdn.pixaba
 $('#card-1').append($('<div>', {class:  'card-body', id: 'title'}));
 $('#title').append($('<h4 class="card-title">Card title</h4>'));
 $('#title').append($('<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>'));
-$('#card').append($('<div>', {class:  'card-footer'}));
-$('#card').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
+$('#card-1').append($('<div>', {class:  'card-footer button-2'}));
+$('.button-2').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
 
 $('#img1').append($('<div>', {class:  'col-lg-3 col-md-6 mb-4', id: 'card1'}));
 $('#card1').append($('<div>', {class:  'card h-100', id: 'card2'}));
@@ -60,8 +64,8 @@ $('#card2').append($('<img>', {class:  'card-img-top', src: 'https://cdn.pixabay
 $('#card2').append($('<div>', {class:  'card-body', id: 'title1'}));
 $('#title1').append($('<h4 class="card-title">Card title</h4>'));
 $('#title1').append($('<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>'));
-$('#card1').append($('<div>', {class:  'card-footer'}));
-$('#card1').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
+$('#card2').append($('<div>', {class:  'card-footer button-3'}));
+$('.button-3').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
 
 $('#img1').append($('<div>', {class:  'col-lg-3 col-md-6 mb-4', id: 'card12'}));
 $('#card12').append($('<div>', {class:  'card h-100', id: 'card21'}));
@@ -69,5 +73,11 @@ $('#card21').append($('<img>', {class:  'card-img-top', src: 'https://cdn.pixaba
 $('#card21').append($('<div>', {class:  'card-body', id: 'title12'}));
 $('#title12').append($('<h4 class="card-title">Card title</h4>'));
 $('#title12').append($('<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>'));
-$('#card12').append($('<div>', {class:  'card-footer'}));
-$('#card12  ').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
+$('#card21').append($('<div>', {class:  'card-footer button-4'}));
+$('.button-4 ').append($('<a href="#" class="btn btn-primary">Find Out More!</a>'));
+
+/* Footer */
+
+$('body').append($('<footer>', {class:  'py-5 bg-dark'}));
+$('footer').append($('<div>', {class:  'container', id: 'ttt'}));
+$('#ttt').append($('<p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>'));
